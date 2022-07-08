@@ -33,18 +33,19 @@ export const actions = {
         console.log(error);
       });
   },
-  // sortWeather({ commit }, sort) {
-  //   let sortedItems = this.weather.results;
-  //   if (sort === "Сортировка по чему-то") {
-  //     sortedItems = sortedItems.sort((a, b) => {
-  //       if (a > b) {
-  //         return 1;
-  //       } else return -1;
-  //     });
-  //   }
 
-  //   commit("ADD_WEATHER", sortedItems);
-  // },
+  sortWeather({ commit }, sort) {
+    let sortedItems = this.weather.results;
+    if (sort === "Сортировка по чему-то") {
+      sortedItems = sortedItems.sort((a, b) => {
+        if (a > b) {
+          return 1;
+        } else return -1;
+      });
+    }
+
+    commit("ADD_WEATHER", sortedItems);
+  },
 };
 
 export const getters = {
