@@ -109,6 +109,7 @@ export default {
           } else return -1;
         });
       }
+
       this.sorted = sortedItems;
 
       let offset;

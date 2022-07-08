@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <form id="form" @submit.prevent="send">
     <v-text-field
       v-model="city"
@@ -63,4 +63,4 @@ export default {
 };
 </script>
 
-<style></style>
+<style></style> -->
