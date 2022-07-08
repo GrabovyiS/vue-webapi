@@ -3,6 +3,13 @@ export const state = () => ({
   weatherAreLoaded: false,
 });
 
+export const mutations = {
+  ADD_WEATHER(state, payload) {
+    state.weather = payload;
+    state.weatherAreLoaded = true;
+  },
+};
+
 export const actions = {
   fetchWeather({ commit }, page) {
     let offset;
